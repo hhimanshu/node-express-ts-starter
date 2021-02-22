@@ -3,11 +3,11 @@
 ## Commands
 ```shell
 # to start development
-node run dev
+npm start
 
 # to create production build
 npm run build
 
 # to run production build
-npm start
+npm run start:prod
 ```
