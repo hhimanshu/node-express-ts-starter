@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --respawn src/index.ts",
+    "start": "ts-node-dev --project ./tsconfig.json --respawn src/index.ts",
     "build": "rm -rf dist && tsc",
     "start:prod": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
