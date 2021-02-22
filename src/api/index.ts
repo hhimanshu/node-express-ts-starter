@@ -1,11 +1,14 @@
 import express from 'express';
+import transactionRoutes from './transactions';
+import customerRoutes from './customers';
 
-const app = express();
+const router = express.Router();
 
-app.get('/', (req, res) => {
-  res.setHeader('Content-Type', 'text/html');
-  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
-  res.end('Hello World');
+router.get('/', (req, res) => {
+  res.send('Hello TypeScript + NodeJS + ExpressJS');
 });
 
-export default app;
+router.use('/transactions', transactionRoutes);
+router.use('/customers', customerRoutes);
+
+export default router;
