@@ -9,7 +9,7 @@ router.get('/count', ((req, res) => {
 
 router.get('/recent', ((req, res) => {
     const transaction: Transaction = {amount: 100.23, isDebit: false, when: new Date()};
-    res.json({'total': 42});
+    res.json([transaction]);
 }));
 
 export default router;
