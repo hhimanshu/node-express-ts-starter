@@ -8,7 +8,7 @@
     "build": "rm -rf dist && tsc",
     "prod": "node dist/server.js",
     "lint": "eslint -c .eslintrc.json --ext .ts src",
-    "format": "prettier --write .",
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "postinstall": "husky install",
     "test": "jest --config jest.config.ts",
     "test:watch": "jest --watchAll --config jest.config.ts"
