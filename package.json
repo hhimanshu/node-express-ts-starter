@@ -13,6 +13,11 @@
     "test": "jest --config jest.config.ts",
     "test:watch": "jest --watchAll --config jest.config.ts"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
+  },
   "keywords": [],
   "author": "Harit Himanshu",
   "license": "ISC",
