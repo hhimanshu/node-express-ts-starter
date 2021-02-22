@@ -7,7 +7,7 @@
     "start": "ts-node-dev --project ./tsconfig.json --respawn src/index.ts",
     "build": "rm -rf dist && tsc",
     "prod": "node dist/index.js",
-    "lint": "eslint -c .eslintrc.js --ext .ts src",
+    "lint": "eslint -c .eslintrc.json --ext .ts src",
     "format": "prettier --write .",
     "postinstall": "husky install",
     "test": "jest --config jest.config.ts",

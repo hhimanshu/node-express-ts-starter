@@ -5,6 +5,6 @@ export interface Transaction {
 }
 
 export interface Customer {
-  first: String;
-  last: String;
+  first: string;
+  last: string;
 }
