@@ -1,10 +1,10 @@
 export interface Transaction {
-    when: Date;
-    amount: number;
-    isDebit: boolean;
+  when: Date;
+  amount: number;
+  isDebit: boolean;
 }
 
 export interface Customer {
-    first: String;
-    last: String;
+  first: String;
+  last: String;
 }
