@@ -2,10 +2,26 @@
 
 ## What it contains
 - NodeJS + ExpressJS support with TypeScript
-- Testing support using Jest
+- Testing support using Jest, and [SuperTest](https://github.com/visionmedia/supertest#readme) (for APIs)
 - Formatting support using Prettier
 - ESLint support
 - Ability to collect code coverage via Jest
+
+## APIs
+### Local
+```shell
+# index page
+curl -v https://localhost:3000/
+
+# newest customers
+http://localhost:3000/customers/newest
+
+# recent transactions
+http://localhost:3000/transactions/recent
+
+# transactions count
+http://localhost:3000/transactions/count  
+```
 
 
 ## Commands

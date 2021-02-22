@@ -71,6 +71,7 @@
   "exclude": [
     "jest.config.ts",
     "babel.config.js",
-    "coverage"
+    "coverage",
+    "./src/**/*.test.ts"
   ]
 }

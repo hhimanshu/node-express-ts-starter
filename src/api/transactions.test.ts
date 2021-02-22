@@ -23,9 +23,10 @@ describe('Test Transactions API', () => {
           json => (json as unknown) as Transaction
         );
         expect(transactions).toHaveLength(1);
-        expect(transactions[0]['amount']).toEqual(100.23);
-        expect(transactions[0]['isDebit']).toEqual(false);
+        expect(transactions[0].amount).toEqual(100.23);
+        expect(transactions[0].isDebit).toEqual(false);
         expect(transactions[0]).toHaveProperty('when');
+        expect(transactions[0].when).not.toBeFalsy()
       });
   });
 });
