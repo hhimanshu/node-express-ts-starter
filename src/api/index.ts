@@ -1,6 +1,6 @@
 import express from 'express';
 
-const app = express()
+const app = express();
 
 app.get('/', (req, res) => {
   res.setHeader('Content-Type', 'text/html');
@@ -8,4 +8,4 @@ app.get('/', (req, res) => {
   res.end('Hello World');
 });
 
-export default app
+export default app;
