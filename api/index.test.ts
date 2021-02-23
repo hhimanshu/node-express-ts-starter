@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '../app';
+import app from './server';
 
 describe('Test Index "/" API', () => {
   it('should return 200 OK for a GET request', () => {

@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '../app';
+import app from './server';
 import { Transaction } from '../declaration';
 
 describe('Test Transactions API', () => {

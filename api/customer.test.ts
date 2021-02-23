@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '../app';
+import app from './server';
 import { Customer } from '../declaration';
 
 describe('Test Customers API', () => {

@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --project ./tsconfig.json --respawn src/server.ts",
+    "start": "ts-node-dev --project ./tsconfig.json --respawn api/server.ts",
     "build": "rm -rf dist && tsc",
     "prod": "node dist/server.js",
-    "lint": "eslint -c .eslintrc.json --ext .ts src",
-    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint -c .eslintrc.json --ext .ts api",
+    "format": "prettier --config .prettierrc 'api/**/*.ts' --write",
     "postinstall": "husky install",
     "test": "jest --config jest.config.ts",
     "test:watch": "jest --watchAll --config jest.config.ts"
